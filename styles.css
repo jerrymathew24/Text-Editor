@@ -1,0 +1,64 @@
+body{
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.editor-container {
+    width: 80vh;
+    height: auto;
+    background: rgb(158, 197, 231);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2{
+    text-align: center;
+    margin: auto;
+    color: white;
+}
+
+.toolbar {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+}
+.toolbar button,
+.toolbar input,
+.toolbar select {
+    flex-shrink: 1;
+        flex: 1 1 calc(25% - 10px);
+        min-width: 10px;
+    }
+
+
+button{
+    border: none;
+    background: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    float: left;
+}
+button:hover {
+    background: rgb(158, 197, 231);
+    transition: all 0.3s ease;
+    color: white;
+}
+.content{
+    margin: 10px;
+    background: white;
+    border-radius: 5px;
+    padding: 10px;
+    min-height: 3vh;
+    overflow: auto;
+}
+
+
